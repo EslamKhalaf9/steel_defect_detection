@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav id="main-nav" className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div className="container">
         <a className="navbar-brand" href="/">
           Steel Defect Detection
@@ -26,17 +26,17 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="#features">
                 Fetures
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="#statistics">
                 Statistics
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="#detect">
                 Detect Defection
               </a>
             </li>

@@ -11,7 +11,7 @@ export default class Charts extends Component {
       datasets: [
         {
           label: '# of Defects',
-          data: [12, 15, 3, 5],
+          data: [897, 247, 5150, 801],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
@@ -64,7 +64,7 @@ export default class Charts extends Component {
   }
   render() {
     return (
-      <div className="charts mt-5 text-center">
+      <div id="statistics" className="charts mt-5 text-center">
         <h2 className="display">Charts</h2>
         <p className="lead">
           Here is some statisitcs about the deteced images and the most common

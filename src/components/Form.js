@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 export default class Form extends Component {
   state = {
     image: '',
+    result: ''
   };
 
   handleChange = (e) => {
@@ -12,10 +13,13 @@ export default class Form extends Component {
 
   handelSubmit = (e) => {
     //handleSubmit
+
+
   };
   render() {
     return (
       <form
+        id="detect"
         className="m-auto container col-md-6 my-5"
         onSubmit={this.handelSubmit}
       >
@@ -37,6 +41,12 @@ export default class Form extends Component {
             className="btn btn-success"
           />
         </div>
+        {
+          this.state.result ? <div className="result">
+            <p className="h1">The Defect belongs to</p>
+            <p className="text-center h1 bg-secondary p-2 text-white border border-1">{this.state.result}</p>
+          </div> : null
+        }
       </form>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <section id="Features mt-5">
+    <section id="features" className="mt-5">
       <div className="container text-center">
         <h2 className="display">App Features</h2>
         <p className="lead">

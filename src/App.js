@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Carousel />
       </header>
-      <main>
+      <main data-spy="scroll" data-target="#main-nav" data-offset="0">
         <Features />
         <Charts />
         <Form />
