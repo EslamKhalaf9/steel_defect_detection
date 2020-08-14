@@ -7,6 +7,32 @@ html {
   height: 580px;
 }
 
+.report img{
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: #ffe;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.custom-file-upload.btn{
+  background-color: #2f618e; 
+  opacity: 0.95;
+  color: #FFF 
+}
+
+.custom-file-upload.btn:hover{
+  opacity: 1;
+  background-color: #2f618e;
 }

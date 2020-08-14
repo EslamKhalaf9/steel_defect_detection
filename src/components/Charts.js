@@ -5,19 +5,14 @@ import Chart from 'chart.js';
 export default class Charts extends Component {
   componentDidMount() {
     const canvases = document.querySelectorAll('canvas');
-
+    let colors2 = ['#49A9EA', '#36CAAB', '#34495E', '#B370CF'];
     const data = {
-      labels: ['Class 1', 'Class 2', 'Class 3', 'Class 4'],
+      labels: ['Defect 1', 'Defect 2', 'Defect 3', 'Defect 4'],
       datasets: [
         {
           label: '# of Defects',
           data: [897, 247, 5150, 801],
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-          ],
+          backgroundColor: colors2,
           borderWidth: 3,
         },
       ],
@@ -71,14 +66,22 @@ export default class Charts extends Component {
           defect classes
         </p>
         <div className="chartsContainer m-auto col-md-6 row">
+          <div className="col-6">
+            Chart Details
+          </div>
           <canvas
-            className="col-12"
+            className="col-6"
             width="200"
             height="100"
             id="doughnutChart"
           ></canvas>
+        </div>
+        <div className="chartsContainer m-auto col-md-6 row">
+          <div className="col-6">
+            Chart Details
+            </div>
           <canvas
-            className="col-12"
+            className="col-6"
             width="200"
             height="100"
             id="barChart"
